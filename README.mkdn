@@ -67,7 +67,7 @@ What could go wrong?
 
 lots of things. i tried not to make assumptions and do checks before executing things, but it may still go haywire. if you get an ugly error, please copy the error from your terminal and open an Issue on github so i can fix it!
 
-also if you notice that all your content images are broken, it's not my fault! you need to mirror your wp-content/uploads directory from your source environment. if you do that and your images are still broke
+also if you notice that all your content images are broken, it's not my fault! you need to mirror your wp-content/uploads directory from your source environment. if you do that and your images are still broken, check if you specified a custom path to your uploads folder - in the future i want to support updating this path as well, but i'm not sure yet how to do this without it being super confusing.
 
 Credits and Thanks
 ==================

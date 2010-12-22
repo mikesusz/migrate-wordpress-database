@@ -11,8 +11,8 @@ How do i use it?
 * modify the values in that dbup.cfg to reflect your database, and a path to your sql dump relative to the location of the config file
 * invoke this script from within your project root (where your dbup.cfg is), e.g. if your layout is like:
 
-	projects/mywordpressproject/
-	projects/mywordpressproject/docs/
+	projects/mywordpressproject
+	projects/mywordpressproject/docs
 	projects/mywordpressproject/docs/dbup.cfg
 	projects/mywordpressproject/docs/_db/staging.sql
 
@@ -29,12 +29,12 @@ and it will look for dbup.cfg in your current directory, and go from there!
 What's in the config file?
 ==========================
 
-	* host name to be replaced ( e.g. staging.example.com ) no slashes
-	* host name to replace it with (e.g. development.local ) no slashes
-	* path to the .sql file to work with (relative to where your dbup.cfg is)
-	* the local database name
-	* the local database host ( e.g. localhost )
-	* the local database username
+* host name to be replaced ( e.g. staging.example.com ) no slashes
+* host name to replace it with (e.g. development.local ) no slashes
+* path to the .sql file to work with (relative to where your dbup.cfg is)
+* the local database name
+* the local database host ( e.g. localhost )
+* the local database username
 
 What else do i need?
 ====================

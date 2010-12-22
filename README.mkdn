@@ -1,0 +1,73 @@
+Migrate WordPress Database script
+=================================
+
+This is basically designed to be a timesaver during normal WordPress development in a multi-tiered environment. it will take a sql dump (created with mysqldump) from one environment, replace hostnames in the dump file as it imports it into your local mysql instance.
+
+How do i use it?
+================
+
+* checkout or unpack this project somewhere outside of your project director(ies).
+* copy the included example dbup.cfg into your project directory (where you can manage it with whatever source control your project requires)
+* modify the values in that dbup.cfg to reflect your database, and a path to your sql dump relative to the location of the config file
+* invoke this script from within your project root (where your dbup.cfg is), e.g. if your layout is like:
+
+	projects/mywordpressproject/
+	projects/mywordpressproject/docs/
+	projects/mywordpressproject/docs/dbup.cfg
+	projects/mywordpressproject/docs/_db/staging.sql
+
+and this project in another directory, e.g.
+
+	projects/migrate-wordpress-database/dbup.sh
+
+then from projects/mywordpressproject/docs/ you would:
+
+	$ bash ../migrate-wordpress-database/dbup.sh
+
+and it will look for dbup.cfg in your current directory, and go from there!
+
+What's in the config file?
+==========================
+
+	* host name to be replaced ( e.g. staging.example.com ) no slashes
+	* host name to replace it with (e.g. development.local ) no slashes
+	* path to the .sql file to work with (relative to where your dbup.cfg is)
+	* the local database name
+	* the local database host ( e.g. localhost )
+	* the local database username
+
+What else do i need?
+====================
+
+This script relies on the following to be installed and available in your path:
+* bash shell (it would be rare for your Linux or Mac OS X system to be missing this)
+* mysql (of course)
+* sed (low-level old school *nix utility. it should be there.)
+
+What if i'm using Windows?
+==========================
+
+Fare Thee Well! honestly i haven't done development work outside of a LAMP stack in quite a while. if you've gotten php and mysql running on your Windows box, and you want to use this script, give me a shout and i'll see what i can do to help.
+
+What could go wrong?
+====================
+
+lots of things. i tried not to make assumptions and do checks before executing things, but it may still go haywire. if you get an ugly error, please copy the error from your terminal and open an Issue on github so i can fix it!
+
+Credits and Thanks
+==================
+
+John Brayton [@johnbrayton](http://twitter.com/johnbrayton) for helping me figure out the syntax to pipe the output of sed into the mysql import statement
+
+Joel Oliviera [@jayroh](http://twitter.com/jayroh) for his support, pushing me to release this script and because i stole the outline for my README from his README for [html5 boilerplate wordpress](https://github.com/jayroh/html5_boilerplate_wordpress)
+
+All the askers and answerers on [Stack Overflow](http://stackoverflow.com/) who inquired before me about how to do various things in shell scripts.
+
+Contact
+=======
+
+This is the first shell script i've released publicly and surely someone out there has constructive feedback and suggestions. fork/pull request/open an Issue/let me know whassup.
+
+thanks,
+
+ - mike susz [@mikesusz](http://twitter.com/mikesusz)

@@ -5,7 +5,7 @@ This is basically designed to be a timesaver during normal WordPress development
 
 What does it do?
 ================
-once the config file it set up, with one command it will take a sql dump (created with mysqldump) from one environment, and import it into your local mysql instance while replace hostnames in the dump file on the fly!
+once the config file it set up, with one command it will take a sql dump (that you created with mysqldump) from one environment, and import it into your local mysql instance while replace hostnames in the dump file on the fly!
 
 Why would i want to use it?
 ===========================

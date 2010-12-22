@@ -1,7 +1,15 @@
 Migrate WordPress Database script
 =================================
 
-This is basically designed to be a timesaver during normal WordPress development in a multi-tiered environment. it will take a sql dump (created with mysqldump) from one environment, replace hostnames in the dump file as it imports it into your local mysql instance.
+This is basically designed to be a timesaver during normal WordPress development in a multi-tiered environment.
+
+What does it do?
+================
+once the config file it set up, with one command it will take a sql dump (created with mysqldump) from one environment, and import it into your local mysql instance while replace hostnames in the dump file on the fly!
+
+Why would i want to use it?
+===========================
+Have you ever tried to open a Wordpress .sql dump file in a text editor and find/replace the hostnames? it's a miserable experience even when it works.
 
 How do i use it?
 ================

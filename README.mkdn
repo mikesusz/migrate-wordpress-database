@@ -11,18 +11,18 @@ How do i use it?
 * modify the values in that dbup.cfg to reflect your database, and a path to your sql dump relative to the location of the config file
 * invoke this script from within your project root (where your dbup.cfg is), e.g. if your layout is like:
 
-	projects/mywordpressproject
-	projects/mywordpressproject/docs
-	projects/mywordpressproject/docs/dbup.cfg
-	projects/mywordpressproject/docs/_db/staging.sql
+    projects/mywordpressproject
+    projects/mywordpressproject/docs
+    projects/mywordpressproject/docs/dbup.cfg
+    projects/mywordpressproject/docs/_db/staging.sql
 
 and this project in another directory, e.g.
 
-	projects/migrate-wordpress-database/dbup.sh
+    projects/migrate-wordpress-database/dbup.sh
 
 then from projects/mywordpressproject/docs/ you would:
 
-	$ bash ../migrate-wordpress-database/dbup.sh
+    $ bash ../migrate-wordpress-database/dbup.sh
 
 and it will look for dbup.cfg in your current directory, and go from there!
 

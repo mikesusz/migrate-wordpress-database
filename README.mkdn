@@ -10,15 +10,19 @@ How do i use it?
 * copy the included example dbup.cfg into your project directory (where you can manage it with whatever source control your project requires)
 * modify the values in that dbup.cfg to reflect your database, and a path to your sql dump relative to the location of the config file
 * invoke this script from within your project root (where your dbup.cfg is), e.g. if your layout is like:
-
-    projects/mywordpressproject
-    projects/mywordpressproject/docs
-    projects/mywordpressproject/docs/dbup.cfg
-    projects/mywordpressproject/docs/_db/staging.sql
-
+<pre>
+projects/mywordpressproject/
+projects/mywordpressproject/docs/
+projects/mywordpressproject/docs/dbup.cfg
+projects/mywordpressproject/docs/_db/staging.sql
+</pre>
 and this project in another directory, e.g.
 
     projects/migrate-wordpress-database/dbup.sh
+
+then in your dbup.cfg you want to specify the path to the .sql like
+
+	sourcefile="_db/staging.sql"
 
 then from projects/mywordpressproject/docs/ you would:
 

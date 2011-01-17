@@ -74,7 +74,7 @@ Credits and Thanks
 
 John Brayton [@johnbrayton](http://twitter.com/johnbrayton) for helping me figure out the syntax to pipe the output of sed into the mysql import statement
 
-Joel Oliviera [@jayroh](http://twitter.com/jayroh) for his support, pushing me to release this script and because i stole the outline for my README from his README for [html5 boilerplate wordpress](https://github.com/jayroh/html5_boilerplate_wordpress)
+Joel Oliveira [@jayroh](http://twitter.com/jayroh) for his support, pushing me to release this script and because i stole the outline for my README from his README for [html5 boilerplate wordpress](https://github.com/jayroh/html5_boilerplate_wordpress)
 
 All the askers and answerers on [Stack Overflow](http://stackoverflow.com/) who inquired before me about how to do various things in shell scripts.
 

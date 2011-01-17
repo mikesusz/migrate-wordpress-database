@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Reading config...." >&2
 #var for command argument
 loc=./$1

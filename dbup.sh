@@ -35,4 +35,4 @@ exit 1;
 
 echo 'everything appears to be in order,'
 echo 'all we need is your mysql password for user '$dbuser@$dbhost
-sed -e s/$oldname/$newname/gi $loc/$sourcefile | mysql -u $dbuser -p -h $dbhost $dbname
+sed -e s/$oldname/$newname/g $loc/$sourcefile | mysql -u $dbuser -p -h $dbhost $dbname
